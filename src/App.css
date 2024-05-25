@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f7f7; /* Light gray background */
+  color: #333333; /* Dark gray text color */
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+main {
+  max-width: 380px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #ffffff; /* White background for main content */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+h1 {
+  text-align: center;
+  color: #6b5b95; /* Lavender color for the heading */
+  margin: 0;
+}
+
+
+form {
+  margin-top: 20px;
+}
+
+form input {
+  width: 100%;
+  background-color: #f0e5d6; /* Light beige input background */
+  color: #333333; /* Dark gray text color */
+  border: 2px solid #6b5b95; /* Lavender border */
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+form input[type="datetime-local"] {
+  color: #7d7d7d; /* Gray color for datetime input */
+}
+
+form div.basic {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+form button {
+  width: 100%;
+  margin-top: 10px;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #b565a7; /* Mauve background for button */
+  color: #ffffff; /* White text color */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #8e4f92; /* Slightly darker mauve on hover */
+}
+
+div.transactions {
+  margin-top: 20px;
+}
+
+div.transaction {
+  display: flex;
+  padding: 10px 0;
+  justify-content: space-between;
+  border-top: 1px solid #6b5b95; /* Match the input border color */
+}
+
+div.transaction:first-child {
+  border-top: 0;
+}
+
+div.transaction div.name {
+  font-size: 1.3rem;
+}
+
+div.transaction div.description {
+  font-size: 0.7rem;
+  color: #a07da3; /* Light lavender for descriptions */
+}
+
+div.right {
+  text-align: right;
+}
+
+div.price.green {
+  color: #65a06b; /* Green color for positive price */
+}
+
+div.price.red {
+  color: #c75757; /* Red color for negative price */
+}
+
+div.transaction div.datetime {
+  font-size: 0.7rem;
+  color: #7d7d7d; /* Match the datetime input color */
+}
